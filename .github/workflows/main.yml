@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js [16.x]
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 16.x
       - name: npm install and build
         run: |
           npm ci
@@ -26,8 +26,8 @@ jobs:
       - name: default deploy
         uses: appleboy/lambda-action@master
         with:
-          aws_access_key_id: AKIAUDMJNTK6RXS26LV6
-          aws_secret_access_key: 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
-          aws_region: eu-west-1
+          aws_access_key_id: AKIAUDMJNTK6UJNJVUXP
+          aws_secret_access_key: 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
+          aws_region: eu-east-1
           function_name: myFunction
           zip_file: bundle.zip
