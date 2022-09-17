@@ -29,5 +29,5 @@ jobs:
           aws_access_key_id: AKIAUDMJNTK6RXS26LV6
           aws_secret_access_key: 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
           aws_region: eu-west-1
-          function_name: my-function
+          function_name: myFunction
           zip_file: bundle.zip
