@@ -1,9 +1,5 @@
 p {
-
-
     color: #DA8FFF;
-
-
 }
 
 body{
@@ -16,8 +12,31 @@ h1{
 
 h2{
    color: #DA8FFF
-
 }
 h3 {
     color: #DA8FFF
 }
+
+.text {
+    color: #DA8FFF;
+  }
+
+#smiley {
+    width: 300px;
+    height: auto;
+  }
+
+@media only screen and (max-width: 400px) {
+
+
+    #smiley {
+
+
+        width: 300px;
+
+
+    }
+
+
+}
+
