@@ -21,22 +21,8 @@ h3 {
     color: #DA8FFF;
   }
 
-#smiley {
-    width: 300px;
+  #smiley {
+    /* Percentage width instead of pixels to make smiley face scale fluidly */
+    width: 50%;
     height: auto;
-  }
-
-@media only screen and (max-width: 400px) {
-
-
-    #smiley {
-
-
-        width: 300px;
-
-
-    }
-
-
 }
-
