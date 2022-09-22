@@ -33,18 +33,52 @@ h3 {
 }
 */
 
-/* Media query to shrink smiley face to 300px when viewport is equal to or smaller than 400px */
+/* Media query to shrink smiley face to 300px when viewport is equal to or smaller than 400px 
 @media only screen and (max-width: 1000px) {
   #smiley {
     width: 400px;
   }
 }
 
-/* Media query to set smiley face's width to percentage when viewport is equal to or smaller than 300px */
+/* Media query to set smiley face's width to percentage when viewport is equal to or smaller than 300px 
 @media only screen and (max-width: 400px) {
   #smiley {
     max-width: 400px;
     width: 50%;
   }
 }
+*/
 
+@media only screen and (max-width: 480px) {
+    #smiley {
+        max-width: 240px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #smiley {
+        max-width: 384px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #smiley {
+        max-width: 512px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #smiley {
+        max-width: 600px;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    #smiley {
+        width: 50%;
+    }
+}
